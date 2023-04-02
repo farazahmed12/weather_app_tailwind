@@ -1,6 +1,7 @@
 import React from "react";
 
 import Form from "./Form";
+import Report from "./Report";
 
 const Home = () => {
   const [result, setResult] = React.useState({});
@@ -13,7 +14,10 @@ const Home = () => {
           </h1>
 
           <div className="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
-            <Form />
+            <Form setResult={setResult} />
+          </div>
+          <div className="flex flex-col justify-between sm:flex-row space-y-4">
+            <Report result={result} />
           </div>
         </div>
       </section>

@@ -13,7 +13,7 @@ export const fetchApi = async (city, country) => {
 
   try {
     const response = await axios.request(options);
-    console.log(response.data);
+    return response.data;
   } catch (error) {
     console.log("Error", error.message);
   }
