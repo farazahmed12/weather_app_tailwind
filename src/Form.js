@@ -13,6 +13,7 @@ const Form = ({ setResult, setError }) => {
     try {
       let res = await fetchApi(data.city, data.country);
       setResult(res);
+      setError("");
     } catch (err) {
       setError(err.message);
     }

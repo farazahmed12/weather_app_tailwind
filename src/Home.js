@@ -22,14 +22,14 @@ const Home = () => {
             <Report result={result} />
             {error ? (
               <div className=" grid justify-items-center ">
-                <div className="bg-slate-700 p-8 my-8">
-                  <div className="text-lg sm:text-4xl flex flex-row justify-center my-3">
+                <div className="bg-slate-700 p-8 mt-8">
+                  <div className="text-lg sm:text-4xl flex flex-row justify-center mt-3">
                     <p className="  text-red-700  mx-2 sm:mx-4 my-1">
                       <MdError />
                     </p>
                     <p className="text-white font-semibold">{error}</p>
                   </div>
-                  <div className="text-lg sm:text-2xl flex flex-row justify-center my-3">
+                  <div className="text-lg sm:text-2xl flex flex-row justify-center mt-3">
                     <p className=" text-white  mx-4">
                       Try to understand, we are using the free version 😜
                     </p>
