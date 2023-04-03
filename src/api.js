@@ -16,5 +16,6 @@ export const fetchApi = async (city, country) => {
     return response.data;
   } catch (error) {
     console.log("Error", error.message);
+    throw Error("Sorry, API server down");
   }
 };

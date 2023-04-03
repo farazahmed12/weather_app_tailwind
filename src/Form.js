@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { fetchApi } from "./api.js";
 
-const Form = ({ setResult }) => {
+const Form = ({ setResult, setError }) => {
   const [data, setData] = useState({ city: "", country: "" });
 
   const handleChange = (e) => {
@@ -10,8 +10,12 @@ const Form = ({ setResult }) => {
   };
 
   const getWeather = async () => {
-    let res = await fetchApi(data.city, data.country);
-    setResult(res);
+    try {
+      let res = await fetchApi(data.city, data.country);
+      setResult(res);
+    } catch (err) {
+      setError(err.message);
+    }
   };
 
   return (
