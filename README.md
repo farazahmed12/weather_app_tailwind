@@ -1,5 +1,5 @@
 # Weather App using weather API
-## Live Link: 
+## Live Link: https://weather-app-tailwind-eight.vercel.app/
 
 ## Skills used: React.js, API fetching, Tailwind CSS, flowbite, react-icons 
 
